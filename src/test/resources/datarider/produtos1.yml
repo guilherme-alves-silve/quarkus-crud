@@ -1,0 +1,4 @@
+produto:
+	- id: 1
+	- nome: produto um
+	- valor: 15
