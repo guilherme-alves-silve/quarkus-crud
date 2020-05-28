@@ -6,7 +6,9 @@ If you want to learn more about Quarkus, please visit its website: https://quark
 
 ## Execute MySQL DB
 
+```
 docker run --network host -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=teste -d --rm mysql:8.0.19
+```
 
 ## Running the application in dev mode
 
@@ -40,7 +42,11 @@ If you want to learn more about building native executables, please consult http
 ## Running the application in the container using the same host as mysql-db
 
 ### Running the quarkus without being native
+```
 docker run --network host -i --rm -p 8080:8080 quarkus/quarkus-crud-jvm   
+```
 
 ### Running the quarkus being native                
+```
 docker run --network host -i --rm -p 8080:8080 quarkus/quarkus-crud                 
+```
